@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Nhúng thư viện Vue bằng link CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="myApp">
+        <p>Hello world!!!</p>
+        <!-- Hiển thị giá trị biến bằng {{}} -->
+        <h3>{{message}}</h3>
+        <h3>{{message2}}</h3>
+    </div>
+    {{ message }}
+</body>
+<script>
+    // ceateApp : hỗ trợ tạo ứng dụng dụng vuejs
+    // ref: khai báo báo các biến có kiểu dữ liệu nguyên thủy
+    const {createApp, ref} = Vue;
+
+    // Khởi tạo giá trị ứng dụng
+    createApp({
+        // Cấu hình nội dung ứng dụng
+        setup() {
+            // Khai báo biến kiểu dữ liệu nguyên thủy
+            const message = "Hello World!!!";
+            const message2 = ref("Hello VueJs");
+            // trả giá trị biến về view
+            return {
+                message, message2
+            }
+        }
+    }).mount("#myApp");
+</script>
+</html>
