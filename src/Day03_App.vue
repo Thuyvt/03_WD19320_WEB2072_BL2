@@ -22,7 +22,6 @@
     // 4. 2WAY DATABINDING
     const userName = ref("Vũ Thị Thúy");
 
-
 </script>
 <template>
 	<div class="container-fluid bg-warning">
