@@ -34,7 +34,12 @@
         // student.yOb = list_students[index].yOb;
         // student.mayjor = list_students[index].mayjor
         // TH2: gán lại giá trị student là ref nếu thay đổi toàn bộ giá trị student
-        student.value = list_students[index];
+        student.value = {
+            id: list_students[index].id,
+            name: list_students[index].name,
+            yOb: list_students[index].yOb,
+            mayjor: list_students[index].mayjor
+        };
     }
     // Xóa
     const onClickDelete = (index) => {
@@ -62,7 +67,7 @@
     // Cập nhật
     const onClickUpdate = () => {
         // lấy được index hoặc id đối tượng cần sửa
-        // cập nhật thông tin đối tượng trong list thông qua index
+        // cập nhật thông tin đối tượng trong list thông qua
     }
 
 </script>
