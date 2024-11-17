@@ -44,8 +44,26 @@
         }
     }
 
+    // Tạo mới
+    const onClickCreate = () => {
+        console.log(student);
+        // Validate: viết hàm tự xử lý
+        const validate = true;
+        if (validate) {
+            list_students.push({
+                id: student.value.id,
+                name: student.value.name,
+                yOb: student.value.yOb,
+                mayjor: student.value.mayjor,
+            });
+        }
+    }
 
-
+    // Cập nhật
+    const onClickUpdate = () => {
+        // lấy được index hoặc id đối tượng cần sửa
+        // cập nhật thông tin đối tượng trong list thông qua index
+    }
 
 </script>
 <template>
