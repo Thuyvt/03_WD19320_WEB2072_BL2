@@ -1,0 +1,19 @@
+{
+  "hotels": [
+    {
+      "id": "2",
+      "name": "Khách sạn B",
+      "address": "Đà Nẵng",
+      "rating": 4,
+      "level": 2
+    },
+    {
+      "id": "3",
+      "name": "Khách sạn C",
+      "address": "Hồ Chí Minh",
+      "rating": 5,
+      "level": 3
+    }
+  ],
+  "address": []
+}
