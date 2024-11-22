@@ -8,12 +8,30 @@
       "level": 2
     },
     {
-      "id": "3",
+      "id": "1",
       "name": "Khách sạn C",
       "address": "Hồ Chí Minh",
       "rating": 5,
       "level": 3
+    },
+    {
+      "id": "3",
+      "name": "1",
+      "address": "Hà Nội",
+      "rating": 12,
+      "level": 12
+    },
+    {
+      "id": "4",
+      "name": "12",
+      "address": "Hải Phòng",
+      "rating": 1231,
+      "level": 123123
     }
   ],
-  "address": []
+  "address": [
+    {"id": "1", "name": "Hồ Chí Minh"},
+    {"id": "1", "name": "Hà Nội"}
+
+  ]
 }
