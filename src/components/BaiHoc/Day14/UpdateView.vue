@@ -32,7 +32,10 @@ const checkValidate = () => {
 
 // Hàm lấy thông tin chi tiết
 const getDetail = async() => {
-
+  const response = await instanceAxios.get(`hotels/${selectedId.value}`)
+  if (response) {
+    hotel.value = response.data;
+  }
 }
 
 // Hàm cập nhật
@@ -43,8 +46,11 @@ const onClickUpdate = async() => {
 onMounted(() => {
   if (route && route.params) {
     selectedId.value = route.params.id;
+    // Gọi API lấy thông tin chi tiết của object
+    getDetail();
+  } else {
+    alert('Phải chọn đối tượng cần sửa')
   }
-  // Gọi API lấy thông tin chi tiết của object
 
 })
 </script>
