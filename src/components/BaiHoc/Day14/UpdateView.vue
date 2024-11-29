@@ -56,7 +56,7 @@ onMounted(() => {
 </script>
 <template>
   <h2>Trang tạo mới</h2>
-  <form>
+  <form @submit.prevent>
     <div class="mt-3">
       <span class="form-label">ID:</span>
       <input class="form-control" type="text" v-model="hotel.id" />
