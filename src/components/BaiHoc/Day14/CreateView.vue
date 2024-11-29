@@ -2,6 +2,7 @@
 import { ref, onMounted } from "vue";
 // Khai báo file kết nối cơ sở dữ liệu
 import instanceAxios from "@/ultis/configAxios";
+import { useRouter } from "vue-router";
 // Khai báo biến tương tác form
 const hotel = ref({
     id: "",
@@ -10,6 +11,7 @@ const hotel = ref({
     rating: 0,
     level: 0,
 });
+const route = useRouter();
 // validate
 const checkValidate = () => {
     if (!hotel.value.name || !hotel.value.address ||
@@ -36,6 +38,9 @@ const onClickCreate = async () => {
         alert("Tạo mới thành công");
         // load lại danh sách mới
         // await getListHotels();
+        // Chuyển trang
+        // route.push('/');
+        route.push({name: 'list-view'})
     }
 }
 
